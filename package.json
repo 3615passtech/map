@@ -1,7 +1,9 @@
 {
   "name": "map-passtech",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "GPL-3.0",
+  "homepage": "https://passte.ch",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -19,6 +21,8 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "rsync -azP build/* passte.ch:/var/www/passte.ch",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
