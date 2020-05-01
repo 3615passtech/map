@@ -36,7 +36,7 @@ const BootcampMap = (props: {items: Bootcamp[]}) => (
     )}
   </Map>
 )
-
+// Note: instead of GGMAP API, we could directly use directly from OSM : https://github.com/k4r573n/leaflet-control-osm-geocoder
 const getGeoloc = (address: LatLngTuple | string): LatLngTuple => {
   if (typeof address === "string") {
     // https://developers.google.com/maps/documentation/geocoding/
