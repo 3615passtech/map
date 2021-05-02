@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "license": "GPL-3.0",
-  "homepage": "https://passte.ch",
+  "homepage": "https://3615passtech.github.io/map",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "rsync -azP build/* passte.ch:/var/www/passte.ch",
+    "deploy": "gh-pages -b gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
